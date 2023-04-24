@@ -3,22 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.luolc.com/</loc>
-    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.luolc.com/news/</loc>
-    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.luolc.com/news/google-cloud-ai-2021-09/</loc>
-    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.luolc.com/publications/query-modularized-detection/</loc>
+    <lastmod>2021-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/</loc>
     <lastmod>2021-06-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -40,6 +30,11 @@
   <url>
     <loc>https://www.luolc.com/publications/parallel-multi-scale-attention/</loc>
     <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/news/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
