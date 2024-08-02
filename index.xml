@@ -6,10 +6,37 @@
     <description>Recent content on Liangchen Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.luolc.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Work Experience</title>
+      <link>https://www.luolc.com/news/google-deepmind/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/news/google-deepmind/</guid>
+      <description>I transferred to Google DeepMind.</description>
+    </item>
+    
+    <item>
+      <title>Paper Accepted</title>
+      <link>https://www.luolc.com/news/naacl-2024-accepted/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/news/naacl-2024-accepted/</guid>
+      <description>A paper got accepted to NAACL 2024.</description>
+    </item>
+    
+    <item>
+      <title>Paper Accepted</title>
+      <link>https://www.luolc.com/news/aaai-2024-accepted/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/news/aaai-2024-accepted/</guid>
+      <description>A paper got accepted to AAAI 2024.</description>
+    </item>
     
     <item>
       <title>Bridging the Gap Between Object Detection and User Intent via Query-Modulation</title>
