@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bridging the Gap Between Object Detection and User Intent via Query-Modulation</title>
+	<title>Towards an On-Device Agent for Text Rewriting</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta name="generator" content="Hugo 0.60.0" />
-	<meta property="og:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation" />
-<meta property="og:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device." />
+	<meta property="og:title" content="Towards an On-Device Agent for Text Rewriting" />
+<meta property="og:description" content="Abstract Large Language Models (LLMs) have demonstrated impressive capabilities for text rewriting. However creating a smaller yet potent language model for text rewriting presents two formidable challenges: costly data collection and absence of emergent capabilities. In this paper we present solutions to address the above challenges. We propose an new instruction tuning method to develop a mobile text rewriting model that leverages LLM-generated data and heuristic reinforcement learning, eliminating the need for human data collection." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.luolc.com/publications/query-modularized-detection/" />
-<meta property="article:published_time" content="2021-06-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-06-18T00:00:00+00:00" />
+<meta property="og:url" content="https://www.luolc.com/publications/on-device-rewriting/" />
+<meta property="article:published_time" content="2024-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-06-16T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation"/>
-<meta name="twitter:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device."/>
+<meta name="twitter:title" content="Towards an On-Device Agent for Text Rewriting"/>
+<meta name="twitter:description" content="Abstract Large Language Models (LLMs) have demonstrated impressive capabilities for text rewriting. However creating a smaller yet potent language model for text rewriting presents two formidable challenges: costly data collection and absence of emergent capabilities. In this paper we present solutions to address the above challenges. We propose an new instruction tuning method to develop a mobile text rewriting model that leverages LLM-generated data and heuristic reinforcement learning, eliminating the need for human data collection."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,7 +80,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Bridging the Gap Between Object Detection and User Intent via Query-Modulation</h1>
+			<h1 class="post__title">Towards an On-Device Agent for Text Rewriting</h1>
 			
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 577.545 577.545">
@@ -90,25 +90,24 @@ if (!doNotTrack) {
 		</g>
 	</svg>
 	<ul class="tags__list">
-	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2106.10258" rel="tag">arXiv</a></li>
-	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/query-modularized-detection/#bibtex" rel="tag">bib</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2308.11807" rel="tag">arXiv</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/on-device-rewriting/#bibtex" rel="tag">bib</a></li>
 </ul>
 </div>
-			<div class="pub__meta">Marco Fornoni, Chaochao Yan, <b>Liangchen Luo</b>, Kimberly Wilber, Alex Stark, Yin Cui, Boqing Gong, Andrew Howard.<br>
-<em>arXiv preprint</em>.
-2021.
+			<div class="pub__meta">Yun Zhu, Yinxiao Liu, Felix Stahlberg, Shankar Kumar, Yu-hui Chen, <b>Liangchen Luo</b>, Lei Shu, Renjie Liu, Jindong Chen, Lei Meng.<br>In
+<em>Findings of the Association for Computational Linguistics: NAACL 2024</em>, Mexico City, Mexico.
+2024.
 			</div>
 		</header><div class="content post__content clearfix">
 			<h2 id="abstract">Abstract</h2>
-<p>When interacting with objects through cameras, or pictures, users often have a specific intent.
-For example, they may want to perform a visual search.
-With most object detection models relying on image pixels as their sole input, undesired results are not uncommon.
-Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label.
-The issue is especially severe when operating capacity-constrained mobile object detectors on-device.
-In this paper we investigate techniques to modulate mobile detectors to explicitly account for the user intent, expressed as an embedding of a simple query.
-Compared to standard detectors, query-modulated detectors show superior performance at detecting objects for a given user query.
-Thanks to large-scale training data synthesized from standard object detection annotations, query-modulated detectors also outperform a specialized referring expression recognition system.
-Query-modulated detectors can also be trained to simultaneously solve for both localizing a user query and standard detection, even outperforming standard mobile detectors at the canonical COCO task.</p>
+<p>Large Language Models (LLMs) have demonstrated impressive capabilities for text rewriting.
+However creating a smaller yet potent language model for text rewriting presents two formidable challenges: costly data collection and absence of emergent capabilities.
+In this paper we present solutions to address the above challenges.
+We propose an new instruction tuning method to develop a mobile text rewriting model that leverages LLM-generated data and heuristic reinforcement learning, eliminating the need for human data collection.
+Moreover, to bridge the performance gap from the constraint size, we propose a cascading approach based on the confidence levels which are distilled from the large server model’s critiques.
+To evaluate the text rewriting tasks for mobile scenarios, we introduce MessageRewriteEval, a human-labeled benchmark that focuses on text rewriting of messages through natural language instructions.
+Through empirical experiments, we demonstrate that our on-device model surpasses the current state-of-the-art LLMs in text rewriting while maintaining a significantly reduced model size using public benchmark EditEval and our new benchmark.
+We also demonstrate that our proposed cascading approach improves model performance further.</p>
 
 		</div>
 
@@ -120,11 +119,15 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 
 <h2 id="bibtex">BibTex</h2>
-<pre><code>@article{Fornoni21QMD,
-  author = {Fornoni, Marco and Yan, Chaochao and Luo, Liangchen and Wilber, Kimberly and Stark, Alex and Cui, Yin and Gong, Boqing and Howard, Andrew},
-  title = {Bridging the Gap Between Object Detection and User Intent via Query-Modulation},
-  journal = {arXiv preprint arXiv:2106.10258},
-  year = {2021}
+<pre><code>@inproceedings{Zhu2024OnDeviceRewriting,
+  author = {Zhu, Yun and Liu, Yinxiao and Stahlberg, Felix and Kumar, Shankar and Chen, Yu-hui and Luo, Liangchen and Shu, Lei and Liu, Renjie and Chen, Jindong and Meng, Lei},
+  title = {Towards an On-Device Agent for Text Rewriting},
+  booktitle = {Findings of the Association for Computational Linguistics: NAACL 2024},
+  month = {June},
+  year = {2024},
+  address = {Mexico City, Mexico},
+  pages = {2535--2552},
+  publisher = {Association for Computational Linguistics}
 }
 </code></pre>
 	</article>
@@ -133,10 +136,7 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publications/data-free-distillation/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Large-Scale Generative Data-Free Distillation</p></a>
-	</div>
-	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/publications/criticbench/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Critique Ability of Large Language Models</p></a>
+		<a class="post-nav__link" href="/publications/omegaprm/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Improve Mathematical Reasoning in Language Models by Automated Process Supervision</p></a>
 	</div>
 </nav>
 

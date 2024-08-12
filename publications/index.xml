@@ -6,10 +6,46 @@
     <description>Recent content in Publications on Liangchen Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.luolc.com/publications/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Towards an On-Device Agent for Text Rewriting</title>
+      <link>https://www.luolc.com/publications/on-device-rewriting/</link>
+      <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/on-device-rewriting/</guid>
+      <description>Abstract Large Language Models (LLMs) have demonstrated impressive capabilities for text rewriting. However creating a smaller yet potent language model for text rewriting presents two formidable challenges: costly data collection and absence of emergent capabilities. In this paper we present solutions to address the above challenges. We propose an new instruction tuning method to develop a mobile text rewriting model that leverages LLM-generated data and heuristic reinforcement learning, eliminating the need for human data collection.</description>
+    </item>
+    
+    <item>
+      <title>Improve Mathematical Reasoning in Language Models by Automated Process Supervision</title>
+      <link>https://www.luolc.com/publications/omegaprm/</link>
+      <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/omegaprm/</guid>
+      <description>Abstract Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs). Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs. However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized.</description>
+    </item>
+    
+    <item>
+      <title>RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</title>
+      <link>https://www.luolc.com/publications/rewritelm/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/rewritelm/</guid>
+      <description>Abstract Large Language Models (LLMs) have demonstrated impressive capabilities in creative tasks such as storytelling and E-mail generation. However, as LLMs are primarily trained on final text results rather than intermediate revisions, it might be challenging for them to perform text rewriting tasks. Most studies in the rewriting tasks focus on a particular transformation type within the boundaries of single sentences. In this work, we develop new strategies for instruction tuning and reinforcement learning to better align LLMs for cross-sentence rewriting tasks using diverse wording and structures expressed through natural languages including 1) generating rewriting instruction data from Wiki edits and public corpus through instruction generation and chain-of-thought prompting; 2) collecting comparison data for reward model training through a new ranking function.</description>
+    </item>
+    
+    <item>
+      <title>Critique Ability of Large Language Models</title>
+      <link>https://www.luolc.com/publications/criticbench/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/publications/criticbench/</guid>
+      <description>Abstract Critical thinking is essential for rational decision-making and problem-solving. This skill hinges on the ability to provide precise and reasoned critiques and is a hallmark of human intelligence. In the era of large language models (LLMs), this study explores the ability of LLMs to deliver accurate critiques across various tasks. We are interested in this topic as a capable critic model could not only serve as a reliable evaluator, but also as a source of supervised signals for model tuning.</description>
+    </item>
     
     <item>
       <title>Bridging the Gap Between Object Detection and User Intent via Query-Modulation</title>

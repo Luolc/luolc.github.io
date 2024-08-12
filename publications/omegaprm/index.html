@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bridging the Gap Between Object Detection and User Intent via Query-Modulation</title>
+	<title>Improve Mathematical Reasoning in Language Models by Automated Process Supervision</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta name="generator" content="Hugo 0.60.0" />
-	<meta property="og:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation" />
-<meta property="og:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device." />
+	<meta property="og:title" content="Improve Mathematical Reasoning in Language Models by Automated Process Supervision" />
+<meta property="og:description" content="Abstract Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs). Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs. However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.luolc.com/publications/query-modularized-detection/" />
-<meta property="article:published_time" content="2021-06-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-06-18T00:00:00+00:00" />
+<meta property="og:url" content="https://www.luolc.com/publications/omegaprm/" />
+<meta property="article:published_time" content="2024-05-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-05-22T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation"/>
-<meta name="twitter:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device."/>
+<meta name="twitter:title" content="Improve Mathematical Reasoning in Language Models by Automated Process Supervision"/>
+<meta name="twitter:description" content="Abstract Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs). Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs. However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,7 +80,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Bridging the Gap Between Object Detection and User Intent via Query-Modulation</h1>
+			<h1 class="post__title">Improve Mathematical Reasoning in Language Models by Automated Process Supervision</h1>
 			
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 577.545 577.545">
@@ -90,25 +90,26 @@ if (!doNotTrack) {
 		</g>
 	</svg>
 	<ul class="tags__list">
-	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2106.10258" rel="tag">arXiv</a></li>
-	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/query-modularized-detection/#bibtex" rel="tag">bib</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2406.06592" rel="tag">arXiv</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/omegaprm/#bibtex" rel="tag">bib</a></li>
 </ul>
 </div>
-			<div class="pub__meta">Marco Fornoni, Chaochao Yan, <b>Liangchen Luo</b>, Kimberly Wilber, Alex Stark, Yin Cui, Boqing Gong, Andrew Howard.<br>
+			<div class="pub__meta"><b>Liangchen Luo*</b>, Yinxiao Liu*, Rosanne Liu, Samrat Phatale, Harsh Lara, Yunxuan Li, Lei Shu, Yun Zhu, Lei Meng, Jiao Sun, Abhinav Rastogi.<br>
 <em>arXiv preprint</em>.
-2021.
+2024.
 			</div>
 		</header><div class="content post__content clearfix">
 			<h2 id="abstract">Abstract</h2>
-<p>When interacting with objects through cameras, or pictures, users often have a specific intent.
-For example, they may want to perform a visual search.
-With most object detection models relying on image pixels as their sole input, undesired results are not uncommon.
-Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label.
-The issue is especially severe when operating capacity-constrained mobile object detectors on-device.
-In this paper we investigate techniques to modulate mobile detectors to explicitly account for the user intent, expressed as an embedding of a simple query.
-Compared to standard detectors, query-modulated detectors show superior performance at detecting objects for a given user query.
-Thanks to large-scale training data synthesized from standard object detection annotations, query-modulated detectors also outperform a specialized referring expression recognition system.
-Query-modulated detectors can also be trained to simultaneously solve for both localizing a user query and standard detection, even outperforming standard mobile detectors at the canonical COCO task.</p>
+<p>Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs).
+Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs.
+However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized.
+Process supervision addresses this limitation by assigning intermediate rewards during the reasoning process.
+To date, the methods used to collect process supervision data have relied on either human annotation or per-step Monte Carlo estimation, both prohibitively expensive to scale, thus hindering the broad application of this technique.
+In response to this challenge, we propose a novel divide-and-conquer style Monte Carlo Tree Search (MCTS) algorithm named <em>OmegaPRM</em> for the efficient collection of high-quality process supervision data.
+This algorithm swiftly identifies the first error in the Chain of Thought (CoT) with binary search and balances the positive and negative examples, thereby ensuring both efficiency and quality.
+As a result, we are able to collect over 1.5 million process supervision annotations to train a Process Reward Model (PRM).
+Utilizing this fully automated process supervision alongside the weighted self-consistency algorithm, we have enhanced the instruction tuned Gemini Pro model's math reasoning performance, achieving a 69.4% success rate on the MATH benchmark, a 36% relative improvement from the 51% base model performance.
+Additionally, the entire process operates without any human intervention, making our method both financially and computationally cost-effective compared to existing methods.</p>
 
 		</div>
 
@@ -120,11 +121,11 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 
 <h2 id="bibtex">BibTex</h2>
-<pre><code>@article{Fornoni21QMD,
-  author = {Fornoni, Marco and Yan, Chaochao and Luo, Liangchen and Wilber, Kimberly and Stark, Alex and Cui, Yin and Gong, Boqing and Howard, Andrew},
-  title = {Bridging the Gap Between Object Detection and User Intent via Query-Modulation},
-  journal = {arXiv preprint arXiv:2106.10258},
-  year = {2021}
+<pre><code>@article{Luo2024OmegaPRM,
+  author = {Luo, Liangchen and Liu, Yinxiao and Liu, Rosanne and Phatale, Samrat and Lara, Harsh and Li, Yunxuan and Shu, Lei and Zhu, Yun and Meng, Lei and Sun, Jiao and Rastogi, Abhinav},
+  title = {Improve Mathematical Reasoning in Language Models by Automated Process Supervision},
+  journal = {arXiv preprint arXiv:2406.06592},
+  year = {2024}
 }
 </code></pre>
 	</article>
@@ -133,10 +134,10 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publications/data-free-distillation/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Large-Scale Generative Data-Free Distillation</p></a>
+		<a class="post-nav__link" href="/publications/rewritelm/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/publications/criticbench/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Critique Ability of Large Language Models</p></a>
+		<a class="post-nav__link" href="/publications/on-device-rewriting/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Towards an On-Device Agent for Text Rewriting</p></a>
 	</div>
 </nav>
 

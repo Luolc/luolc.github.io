@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bridging the Gap Between Object Detection and User Intent via Query-Modulation</title>
+	<title>RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta name="generator" content="Hugo 0.60.0" />
-	<meta property="og:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation" />
-<meta property="og:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device." />
+	<meta property="og:title" content="RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting" />
+<meta property="og:description" content="Abstract Large Language Models (LLMs) have demonstrated impressive capabilities in creative tasks such as storytelling and E-mail generation. However, as LLMs are primarily trained on final text results rather than intermediate revisions, it might be challenging for them to perform text rewriting tasks. Most studies in the rewriting tasks focus on a particular transformation type within the boundaries of single sentences. In this work, we develop new strategies for instruction tuning and reinforcement learning to better align LLMs for cross-sentence rewriting tasks using diverse wording and structures expressed through natural languages including 1) generating rewriting instruction data from Wiki edits and public corpus through instruction generation and chain-of-thought prompting; 2) collecting comparison data for reward model training through a new ranking function." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.luolc.com/publications/query-modularized-detection/" />
-<meta property="article:published_time" content="2021-06-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-06-18T00:00:00+00:00" />
+<meta property="og:url" content="https://www.luolc.com/publications/rewritelm/" />
+<meta property="article:published_time" content="2024-03-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-24T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bridging the Gap Between Object Detection and User Intent via Query-Modulation"/>
-<meta name="twitter:description" content="Abstract When interacting with objects through cameras, or pictures, users often have a specific intent. For example, they may want to perform a visual search. With most object detection models relying on image pixels as their sole input, undesired results are not uncommon. Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label. The issue is especially severe when operating capacity-constrained mobile object detectors on-device."/>
+<meta name="twitter:title" content="RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting"/>
+<meta name="twitter:description" content="Abstract Large Language Models (LLMs) have demonstrated impressive capabilities in creative tasks such as storytelling and E-mail generation. However, as LLMs are primarily trained on final text results rather than intermediate revisions, it might be challenging for them to perform text rewriting tasks. Most studies in the rewriting tasks focus on a particular transformation type within the boundaries of single sentences. In this work, we develop new strategies for instruction tuning and reinforcement learning to better align LLMs for cross-sentence rewriting tasks using diverse wording and structures expressed through natural languages including 1) generating rewriting instruction data from Wiki edits and public corpus through instruction generation and chain-of-thought prompting; 2) collecting comparison data for reward model training through a new ranking function."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,7 +80,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Bridging the Gap Between Object Detection and User Intent via Query-Modulation</h1>
+			<h1 class="post__title">RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</h1>
 			
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 577.545 577.545">
@@ -90,25 +90,24 @@ if (!doNotTrack) {
 		</g>
 	</svg>
 	<ul class="tags__list">
-	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2106.10258" rel="tag">arXiv</a></li>
-	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/query-modularized-detection/#bibtex" rel="tag">bib</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2305.15685" rel="tag">arXiv</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/rewritelm/#bibtex" rel="tag">bib</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://github.com/google-research/google-research/tree/master/rewritelm" rel="tag">code</a></li>
 </ul>
 </div>
-			<div class="pub__meta">Marco Fornoni, Chaochao Yan, <b>Liangchen Luo</b>, Kimberly Wilber, Alex Stark, Yin Cui, Boqing Gong, Andrew Howard.<br>
-<em>arXiv preprint</em>.
-2021.
+			<div class="pub__meta">Lei Shu, <b>Liangchen Luo</b>, Yun Zhu, Yinxiao Liu, Simon Tong, Jindong Chen, Lei Meng.<br>In
+<em>Proceedings of the 38th AAAI Conference on Artificial Intelligence</em>, Vancouver, Canada.
+2024.
 			</div>
 		</header><div class="content post__content clearfix">
 			<h2 id="abstract">Abstract</h2>
-<p>When interacting with objects through cameras, or pictures, users often have a specific intent.
-For example, they may want to perform a visual search.
-With most object detection models relying on image pixels as their sole input, undesired results are not uncommon.
-Most typically: lack of a high-confidence detection on the object of interest, or detection with a wrong class label.
-The issue is especially severe when operating capacity-constrained mobile object detectors on-device.
-In this paper we investigate techniques to modulate mobile detectors to explicitly account for the user intent, expressed as an embedding of a simple query.
-Compared to standard detectors, query-modulated detectors show superior performance at detecting objects for a given user query.
-Thanks to large-scale training data synthesized from standard object detection annotations, query-modulated detectors also outperform a specialized referring expression recognition system.
-Query-modulated detectors can also be trained to simultaneously solve for both localizing a user query and standard detection, even outperforming standard mobile detectors at the canonical COCO task.</p>
+<p>Large Language Models (LLMs) have demonstrated impressive capabilities in creative tasks such as storytelling and E-mail generation.
+However, as LLMs are primarily trained on final text results rather than intermediate revisions, it might be challenging for them to perform text rewriting tasks.
+Most studies in the rewriting tasks focus on a particular transformation type within the boundaries of single sentences.
+In this work, we develop new strategies for instruction tuning and reinforcement learning to better align LLMs for cross-sentence rewriting tasks using diverse wording and structures expressed through natural languages including 1) generating rewriting instruction data from Wiki edits and public corpus through instruction generation and chain-of-thought prompting; 2) collecting comparison data for reward model training through a new ranking function.
+To facilitate this research, we introduce OpenRewriteEval, a novel benchmark covers a wide variety of rewriting types expressed through natural language instructions.
+Our results show significant improvements over a variety of baselines.
+The public repository is available on <a href="https://github.com/google-research/google-research/tree/master/rewritelm">GitHub under Google Research</a>.</p>
 
 		</div>
 
@@ -120,11 +119,13 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 
 <h2 id="bibtex">BibTex</h2>
-<pre><code>@article{Fornoni21QMD,
-  author = {Fornoni, Marco and Yan, Chaochao and Luo, Liangchen and Wilber, Kimberly and Stark, Alex and Cui, Yin and Gong, Boqing and Howard, Andrew},
-  title = {Bridging the Gap Between Object Detection and User Intent via Query-Modulation},
-  journal = {arXiv preprint arXiv:2106.10258},
-  year = {2021}
+<pre><code>@inproceedings{Shu2024RewriteLM,
+  author = {Shu, Lei and Luo, Liangchen and Zhu, Yun and Liu, Yinxiao and Tong, Simon and Chen, Jindong and Meng, Lei},
+  title = {RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting},
+  booktitle = {Proceedings of the 38th AAAI Conference on Artificial Intelligence},
+  month = {March},
+  year = {2024},
+  address = {Vancouver, Canada}
 }
 </code></pre>
 	</article>
@@ -133,10 +134,10 @@ Query-modulated detectors can also be trained to simultaneously solve for both l
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publications/data-free-distillation/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Large-Scale Generative Data-Free Distillation</p></a>
+		<a class="post-nav__link" href="/publications/criticbench/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Critique Ability of Large Language Models</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/publications/criticbench/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Critique Ability of Large Language Models</p></a>
+		<a class="post-nav__link" href="/publications/omegaprm/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Improve Mathematical Reasoning in Language Models by Automated Process Supervision</p></a>
 	</div>
 </nav>
 
