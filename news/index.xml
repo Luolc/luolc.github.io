@@ -6,10 +6,28 @@
     <description>Recent content in News on Liangchen Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.luolc.com/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Paper Accepted</title>
+      <link>https://www.luolc.com/news/iclr-2025-accpeted/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/news/iclr-2025-accpeted/</guid>
+      <description>A paper got accepted to ICLR 2025.</description>
+    </item>
+    
+    <item>
+      <title>Paper Accepted</title>
+      <link>https://www.luolc.com/news/emnlp-2024-accepted/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.luolc.com/news/emnlp-2024-accepted/</guid>
+      <description>Two papers got accepted to EMNLP 2024.</description>
+    </item>
     
     <item>
       <title>Work Experience</title>

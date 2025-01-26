@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Improve Mathematical Reasoning in Language Models by Automated Process Supervision</title>
+	<title>SiRA: Sparse Mixture of Low Rank Adaptation</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta name="generator" content="Hugo 0.60.0" />
-	<meta property="og:title" content="Improve Mathematical Reasoning in Language Models by Automated Process Supervision" />
-<meta property="og:description" content="Abstract Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs). Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs. However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized." />
+	<meta property="og:title" content="SiRA: Sparse Mixture of Low Rank Adaptation" />
+<meta property="og:description" content="Abstract Parameter Efficient Tuning has been an prominent approach to adapt the Large Language Model to downstream tasks. Most previous works considers adding the dense trainable parameters, where all parameters are used to adapt certain task. We found this less effective empirically using the example of LoRA that introducing more trainable parameters does not help. Motivated by this we investigate the importance of leveraging &ldquo;sparse&rdquo; computation and propose SiRA: sparse mixture of low rank adaption." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.luolc.com/publications/omegaprm/" />
-<meta property="article:published_time" content="2024-05-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-05-22T00:00:00+00:00" />
+<meta property="og:url" content="https://www.luolc.com/publications/sira/" />
+<meta property="article:published_time" content="2023-11-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-15T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Improve Mathematical Reasoning in Language Models by Automated Process Supervision"/>
-<meta name="twitter:description" content="Abstract Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs). Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs. However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized."/>
+<meta name="twitter:title" content="SiRA: Sparse Mixture of Low Rank Adaptation"/>
+<meta name="twitter:description" content="Abstract Parameter Efficient Tuning has been an prominent approach to adapt the Large Language Model to downstream tasks. Most previous works considers adding the dense trainable parameters, where all parameters are used to adapt certain task. We found this less effective empirically using the example of LoRA that introducing more trainable parameters does not help. Motivated by this we investigate the importance of leveraging &ldquo;sparse&rdquo; computation and propose SiRA: sparse mixture of low rank adaption."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,7 +80,7 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Improve Mathematical Reasoning in Language Models by Automated Process Supervision</h1>
+			<h1 class="post__title">SiRA: Sparse Mixture of Low Rank Adaptation</h1>
 			
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 577.545 577.545">
@@ -90,26 +90,24 @@ if (!doNotTrack) {
 		</g>
 	</svg>
 	<ul class="tags__list">
-	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2406.06592" rel="tag">arXiv</a></li>
-	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/omegaprm/#bibtex" rel="tag">bib</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://arxiv.org/abs/2311.09179" rel="tag">arXiv</a></li>
+	<li class="tags__item"><a class="tags__link btn" href="https://www.luolc.com/publications/sira/#bibtex" rel="tag">bib</a></li>
 </ul>
 </div>
-			<div class="pub__meta"><b>Liangchen Luo*</b>, Yinxiao Liu*, Rosanne Liu, Samrat Phatale, Harsh Lara, Yunxuan Li, Lei Shu, Yun Zhu, Lei Meng, Jiao Sun, Abhinav Rastogi.<br>
+			<div class="pub__meta">Yun Zhu, Nevan Wichers, Chu-Cheng Lin, Xinyi Wang, Tianlong Chen, Lei Shu, Han Lu, Canoee Liu, <b>Liangchen Luo</b>, Jindong Chen, Lei Meng.<br>
 <em>arXiv preprint</em>.
-2024.
+2023.
 			</div>
 		</header><div class="content post__content clearfix">
 			<h2 id="abstract">Abstract</h2>
-<p>Complex multi-step reasoning tasks, such as solving mathematical problems or generating code, remain a significant hurdle for even the most advanced large language models (LLMs).
-Verifying LLM outputs with an Outcome Reward Model (ORM) is a standard inference-time technique aimed at enhancing the reasoning performance of LLMs.
-However, this still proves insufficient for reasoning tasks with a lengthy or multi-hop reasoning chain, where the intermediate outcomes are neither properly rewarded nor penalized.
-Process supervision addresses this limitation by assigning intermediate rewards during the reasoning process.
-To date, the methods used to collect process supervision data have relied on either human annotation or per-step Monte Carlo estimation, both prohibitively expensive to scale, thus hindering the broad application of this technique.
-In response to this challenge, we propose a novel divide-and-conquer style Monte Carlo Tree Search (MCTS) algorithm named <em>OmegaPRM</em> for the efficient collection of high-quality process supervision data.
-This algorithm swiftly identifies the first error in the Chain of Thought (CoT) with binary search and balances the positive and negative examples, thereby ensuring both efficiency and quality.
-As a result, we are able to collect over 1.5 million process supervision annotations to train a Process Reward Model (PRM).
-Utilizing this fully automated process supervision alongside the weighted self-consistency algorithm, we have enhanced the instruction tuned Gemini Pro model's math reasoning performance, achieving a 69.4% success rate on the MATH benchmark, a 36% relative improvement from the 51% base model performance.
-Additionally, the entire process operates without any human intervention, making our method both financially and computationally cost-effective compared to existing methods.</p>
+<p>Parameter Efficient Tuning has been an prominent approach to adapt the Large Language Model to downstream tasks.
+Most previous works considers adding the dense trainable parameters, where all parameters are used to adapt certain task.
+We found this less effective empirically using the example of LoRA that introducing more trainable parameters does not help.
+Motivated by this we investigate the importance of leveraging &ldquo;sparse&rdquo; computation and propose SiRA: sparse mixture of low rank adaption.
+SiRA leverages the Sparse Mixture of Expert(SMoE) to boost the performance of LoRA.
+Specifically it enforces the top k experts routing with a capacity limit restricting the maximum number of tokens each expert can process.
+We propose a novel and simple expert dropout on top of gating network to reduce the over-fitting issue.
+Through extensive experiments, we verify SiRA performs better than LoRA and other mixture of expert approaches across different single tasks and multitask settings.</p>
 
 		</div>
 
@@ -121,11 +119,11 @@ Additionally, the entire process operates without any human intervention, making
 
 
 <h2 id="bibtex">BibTex</h2>
-<pre><code>@article{Luo2024OmegaPRM,
-  author = {Luo, Liangchen and Liu, Yinxiao and Liu, Rosanne and Phatale, Samrat and Lara, Harsh and Li, Yunxuan and Shu, Lei and Zhu, Yun and Meng, Lei and Sun, Jiao and Rastogi, Abhinav},
-  title = {Improve Mathematical Reasoning in Language Models by Automated Process Supervision},
-  journal = {arXiv preprint arXiv:2406.06592},
-  year = {2024}
+<pre><code>@article{Zhu2023SiRA,
+  author = {Zhu, Yun and Wichers, Nevan and Lin, Chu-Cheng and Wang, Xinyi and Chen, Tianlong and Shu, Lei and Lu, Han and Liu, Canoee and Luo, Liangchen and Chen, Jindong and Meng, Lei},
+  title = {SiRA: Sparse Mixture of Low Rank Adaptation},
+  journal = {arXiv preprint arXiv:2311.09179},
+  year = {2023}
 }
 </code></pre>
 	</article>
@@ -134,10 +132,10 @@ Additionally, the entire process operates without any human intervention, making
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publications/rewritelm/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</p></a>
+		<a class="post-nav__link" href="/publications/criticbench/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Critique Ability of Large Language Models</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/publications/on-device-rewriting/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Towards an On-Device Agent for Text Rewriting</p></a>
+		<a class="post-nav__link" href="/publications/rewritelm/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">RewriteLM: An Instruction-Tuned Large Language Model for Text Rewriting</p></a>
 	</div>
 </nav>
 

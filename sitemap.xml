@@ -3,13 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.luolc.com/publications/sparse-rag/</loc>
+    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.luolc.com/</loc>
-    <lastmod>2024-06-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.luolc.com/publications/</loc>
-    <lastmod>2024-06-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/news/</loc>
+    <lastmod>2025-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/news/iclr-2025-accpeted/</loc>
+    <lastmod>2025-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/publications/fusion-eval/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/publications/mips/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/news/emnlp-2024-accepted/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +50,6 @@
   <url>
     <loc>https://www.luolc.com/publications/omegaprm/</loc>
     <lastmod>2024-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.luolc.com/news/</loc>
-    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -45,6 +70,11 @@
   <url>
     <loc>https://www.luolc.com/news/aaai-2024-accepted/</loc>
     <lastmod>2023-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.luolc.com/publications/sira/</loc>
+    <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
