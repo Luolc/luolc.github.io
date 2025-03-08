@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-us">
+<html class="no-js" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Learning Personalized End-to-End Goal-Oriented Dialog</title>
+	<title>Learning Personalized End-to-End Goal-Oriented Dialog - Liangchen Luo</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.60.0" />
-	<meta property="og:title" content="Learning Personalized End-to-End Goal-Oriented Dialog" />
+		<meta property="og:title" content="Learning Personalized End-to-End Goal-Oriented Dialog" />
 <meta property="og:description" content="Abstract Most existing works on dialog systems only consider conversation content while neglecting the personality of the user the bot is interacting with, which begets several unsolved issues. In this paper, we present a personalized end-to-end model in an attempt to leverage personalization in goal-oriented dialogs. We first introduce a Profile Model which encodes user profiles into distributed embeddings and refers to conversation history from other similar users. Then a Preference Model captures user preferences over knowledge base entities to handle the ambiguity in user requests." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.luolc.com/publications/personalized-goal-oriented-dialog/" />
+<meta property="og:url" content="https://www.luolc.com/publications/personalized-goal-oriented-dialog/" /><meta property="article:section" content="publications" />
 <meta property="article:published_time" content="2019-01-31T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-01-31T00:00:00+00:00" />
 
-	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Learning Personalized End-to-End Goal-Oriented Dialog"/>
+
+		<meta itemprop="name" content="Learning Personalized End-to-End Goal-Oriented Dialog">
+<meta itemprop="description" content="Abstract Most existing works on dialog systems only consider conversation content while neglecting the personality of the user the bot is interacting with, which begets several unsolved issues. In this paper, we present a personalized end-to-end model in an attempt to leverage personalization in goal-oriented dialogs. We first introduce a Profile Model which encodes user profiles into distributed embeddings and refers to conversation history from other similar users. Then a Preference Model captures user preferences over knowledge base entities to handle the ambiguity in user requests."><meta itemprop="datePublished" content="2019-01-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-01-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1074">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Learning Personalized End-to-End Goal-Oriented Dialog"/>
 <meta name="twitter:description" content="Abstract Most existing works on dialog systems only consider conversation content while neglecting the personality of the user the bot is interacting with, which begets several unsolved issues. In this paper, we present a personalized end-to-end model in an attempt to leverage personalization in goal-oriented dialogs. We first introduce a Profile Model which encodes user profiles into distributed embeddings and refers to conversation history from other similar users. Then a Preference Model captures user preferences over knowledge base entities to handle the ambiguity in user requests."/>
 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
 	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/favicon.ico">
 		
-<script type="application/javascript">
+		
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-97612757-1', 'auto');
 	
 	ga('send', 'pageview');
 }
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
 			tex2jax: {
@@ -48,13 +57,16 @@ if (!doNotTrack) {
 <body class="body">
 	<div class="container container--outer">
 		<header class="header">
-	<div class="container">
-		<div class="logo" role="banner">
-			<a class="logo__link" href="/" title="Liangchen Luo" rel="home">
-				<div class="logo__title">Liangchen Luo</div>
-				<div class="logo__tagline">A fool living in the amazing world</div>
-			</a>
-		</div>
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Liangchen Luo" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Liangchen Luo</div>
+					<div class="logo__tagline">A fool living in the amazing world</div>
+				</div>
+		</a>
+	</div>
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
@@ -63,11 +75,19 @@ if (!doNotTrack) {
 	<ul class="menu__list">
 		<li class="menu__item">
 			
-			<a class="menu__link" href="/assets/other/CV.pdf">Curriculum Vitae</a>
+			<a class="menu__link" href="/assets/other/CV-LiangchenLuo.pdf">
+				
+				<span class="menu__text">Curriculum Vitae</span>
+				
+			</a>
 		</li>
-		<li class="menu__item">
+		<li class="menu__item menu__item--active">
 			
-			<a class="menu__link" href="/publications/">Publications</a>
+			<a class="menu__link" href="/publications/">
+				
+				<span class="menu__text">Publications</span>
+				
+			</a>
 		</li>
 	</ul>
 </nav>
@@ -75,7 +95,7 @@ if (!doNotTrack) {
 	</div>
 </header>
 		<div class="wrapper flex">
-			<section class="primary">
+			<div class="primary">
 			
 <main class="main" role="main">
 	<article class="post">
@@ -145,7 +165,7 @@ We present several novel approaches in this paper, hoping to bring other researc
 </p>
 	</figcaption>
 </figure>
-<p>Let's take a look at the example in Figure 1 to see what is wrong with conventional content-based goal-oriented dialog systems.</p>
+<p>Let&rsquo;s take a look at the example in Figure 1 to see what is wrong with conventional content-based goal-oriented dialog systems.</p>
 <p>The conversations happen in a restaurant reservation scenario.
 The agent is responsible for recommending restaurants according to the user request and providing extra information if necessary.
 In all the three dialogs, the user utterances are the same.
@@ -161,7 +181,7 @@ Instead of choosing one randomly, the personalized model handles this ambiguity 
 <p>These problems in the above example reflect three common issues with current models:</p>
 <ol>
 <li>The inability to <strong>adjust language style</strong> flexibly (<a href="http://www.aclweb.org/anthology/W17-3541">Herzig et al., 2017</a>).</li>
-<li>The lack of a <strong>dynamic conversation policy</strong> based on the interlocutor's profile (<a href="https://arxiv.org/abs/1706.07503">Joshi et al., 2017</a>).</li>
+<li>The lack of a <strong>dynamic conversation policy</strong> based on the interlocutor&rsquo;s profile (<a href="https://arxiv.org/abs/1706.07503">Joshi et al., 2017</a>).</li>
 <li>The incapability of <strong>handling ambiguities</strong> in user requests.</li>
 </ol>
 <p>Correspondingly, the goals of personalization in goal-oriented dialog systems are solving these issues.
@@ -213,17 +233,23 @@ This part is just the original <span style="font-variant: small-caps">MemN2N</sp
 </main>
 
 
-<nav class="post-nav flex">
-	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/publications/insight-ranking/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Text Assisted Insight Ranking Using Context-Aware Memory Network</p></a>
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/publications/insight-ranking/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Text Assisted Insight Ranking Using Context-Aware Memory Network</p>
+		</a>
 	</div>
-	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/publications/adabound/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Adaptive Gradient Methods with Dynamic Bound of Learning Rate</p></a>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/publications/adabound/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Adaptive Gradient Methods with Dynamic Bound of Learning Rate</p>
+		</a>
 	</div>
 </nav>
 
 
-			</section>
+			</div>
 			
 		</div>
 		<footer class="footer">
@@ -237,6 +263,7 @@ This part is just the original <span style="font-variant: small-caps">MemN2N</sp
 </footer>
 	</div>
 <script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>
 </html>

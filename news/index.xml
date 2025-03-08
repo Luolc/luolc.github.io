@@ -6,109 +6,91 @@
     <description>Recent content in News on Liangchen Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.luolc.com/news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.luolc.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work Experience</title>
+      <link>https://www.luolc.com/news/xai/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.luolc.com/news/xai/</guid>
+      <description>I joined xAI.</description>
+    </item>
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/iclr-2025-accpeted/</link>
       <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/iclr-2025-accpeted/</guid>
       <description>A paper got accepted to ICLR 2025.</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/emnlp-2024-accepted/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/emnlp-2024-accepted/</guid>
       <description>Two papers got accepted to EMNLP 2024.</description>
     </item>
-    
     <item>
       <title>Work Experience</title>
       <link>https://www.luolc.com/news/google-deepmind/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/google-deepmind/</guid>
       <description>I transferred to Google DeepMind.</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/naacl-2024-accepted/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/naacl-2024-accepted/</guid>
       <description>A paper got accepted to NAACL 2024.</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/aaai-2024-accepted/</link>
       <pubDate>Sat, 09 Dec 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/aaai-2024-accepted/</guid>
       <description>A paper got accepted to AAAI 2024.</description>
     </item>
-    
     <item>
       <title>Work Experience</title>
       <link>https://www.luolc.com/news/google-ai-resident/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/google-ai-resident/</guid>
       <description>I graduated from PKU and joined Google Research.</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/iclr-2019-accpeted/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/iclr-2019-accpeted/</guid>
       <description>A paper got accepted to ICLR 2019.</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/aaai-2019-accepted/</link>
       <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/aaai-2019-accepted/</guid>
       <description>Two papers got accepted to AAAI 2019.</description>
     </item>
-    
     <item>
       <title>Award</title>
       <link>https://www.luolc.com/news/award-2018-liaokaiyuan/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/award-2018-liaokaiyuan/</guid>
       <description>I was awarded with Liao Kaiyuan Scholarship and Academic Excellence Award!</description>
     </item>
-    
     <item>
       <title>Paper Accepted</title>
       <link>https://www.luolc.com/news/emnlp-2018-accepted/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/emnlp-2018-accepted/</guid>
       <description>A paper got accepted to EMNLP 2018.</description>
     </item>
-    
     <item>
       <title>Internship</title>
       <link>https://www.luolc.com/news/didi-internship/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.luolc.com/news/didi-internship/</guid>
       <description>Started as a research assistant at DiDi AI Labs.</description>
     </item>
-    
   </channel>
 </rss>
