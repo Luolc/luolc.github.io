@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.luolc.com/publications/sparse-rag/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
+    <loc>https://www.luolc.com/publications/gemini-2p5/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.luolc.com/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.luolc.com/publications/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.luolc.com/publications/sparse-rag/</loc>
     <lastmod>2025-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.luolc.com/news/</loc>

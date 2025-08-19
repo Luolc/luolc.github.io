@@ -6,8 +6,15 @@
     <description>Recent content on Liangchen Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.luolc.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities</title>
+      <link>https://www.luolc.com/publications/gemini-2p5/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.luolc.com/publications/gemini-2p5/</guid>
+      <description>Abstract In this report, we introduce the Gemini 2.X model family: Gemini 2.5 Pro and Gemini 2.5 Flash, as well as our earlier Gemini 2.0 Flash and Flash-Lite models. Gemini 2.5 Pro is our most capable model yet, achieving SoTA performance on frontier coding and reasoning benchmarks. In addition to its incredible coding and reasoning skills, Gemini 2.5 Pro is a thinking model that excels at multimodal understanding and it is now able to process up to 3 hours of video content.</description>
+    </item>
     <item>
       <title>Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection</title>
       <link>https://www.luolc.com/publications/sparse-rag/</link>
